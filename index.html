@@ -3,80 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🍳 Interactive Recipe Finder</title>
+  <title>Interactive Recipe Finder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="overlay">
-      <h1>Interactive Recipe Finder</h1>
-      <p>Enter your ingredients and discover delicious recipes instantly!</p>
+  <!-- Background overlay -->
+  <div class="overlay"></div>
+
+  <!-- Header Section -->
+  <header>
+    <h1>🥘 Dishcovery </h1>
+    <p>Enter your ingredients and discover delicious recipes instantly!</p>
+
+    <div class="search-bar">
+      <select id="cuisineSelect">
+        <option value="">All Cuisines</option>
+        <option value="italian">Italian</option>
+        <option value="indian">Indian</option>
+        <option value="mexican">Mexican</option>
+        <option value="chinese">Chinese</option>
+        <option value="french">French</option>
+      </select>
+      <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., tomato, cheese)">
+      <button id="searchBtn">Find Recipes</button>
     </div>
   </header>
 
-  <!-- Search Section -->
-  <section class="search-bar">
-    <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., tomato, cheese)">
-    <button id="searchBtn">Find Recipes</button>
-  </section>
-
-  <select id="cuisineSelect">
-  <option value="">All Cuisines</option>
-  <option value="Indian">Indian</option>
-  <option value="Chinese">Chinese</option>
-  <option value="Italian">Italian</option>
-  <option value="Mexican">Mexican</option>
-  <option value="Mediterranean">Mediterranean</option>
-  <option value="Thai">Thai</option>
-  <option value="American">American</option>
-</select>
-
-
-  <!-- Recipe Section -->
-  <section class="recipe">
+  <!-- Recipe Suggestions -->
+  <section id="recipeSuggestions">
     <h2>Recipe Suggestions</h2>
-    <div class="box" id="recipeContainer"></div>
+    <div id="recipeContainer" class="recipe-container"></div>
   </section>
 
-  <!-- Categories -->
-  <section class="categories">
+  <!-- Popular Categories -->
+  <section id="popularCategories">
     <h2>Popular Categories</h2>
-    <div class="category-grid">
-      <div class="cat-card">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Breakfast">
-        <h3>Breakfast</h3>
+    <div class="category-container">
+      <div class="category-card" data-category="breakfast">
+        <img src="images/breakfast.jpg" alt="Breakfast">
+        <p>Breakfast</p>
       </div>
-      <div class="cat-card">
+      <div class="category-card" data-category="lunch">
         <img src="images/lunch.png" alt="Lunch">
-        <h3>Lunch</h3>
+        <p>Lunch</p>
       </div>
-      <div class="cat-card">
-        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Dinner">
-        <h3>Dinner</h3>
+      <div class="category-card" data-category="dinner">
+        <img src="images/dinner.jpg" alt="Dinner">
+        <p>Dinner</p>
       </div>
-      <div class="cat-card">
+      <div class="category-card" data-category="dessert">
         <img src="images/dessert.jpg" alt="Dessert">
-        <h3>Dessert</h3>
+        <p>Dessert</p>
       </div>
     </div>
   </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <div class="about-content">
-      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="About us">
-      <div>
-        <h2>About This Project</h2>
-        <p>This Recipe Finder app was built during my IBM Internship to help users reduce food waste and save time by finding recipes based on available ingredients. Powered by the Spoonacular API.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Interactive Recipe Finder | Built for IBM Internship</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
