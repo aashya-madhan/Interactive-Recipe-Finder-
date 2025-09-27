@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Recipe Finder</title>
+  <title>Dishcovery - Interactive Recipe Finder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
   <!-- Header Section -->
   <header>
-    <h1>🥘 Dishcovery </h1>
+    <h1>🥘 Dishcovery</h1>
     <p>Enter your ingredients and discover delicious recipes instantly!</p>
 
     <div class="search-bar">
@@ -55,7 +55,21 @@
         <img src="images/dessert.jpg" alt="Dessert">
         <p>Dessert</p>
       </div>
+      <div class="category-card" data-category="Snacks">
+        <img src="images/snack.jpg" alt="snack">
+        <p>Snacks</p>
+      </div>
+      <div class="category-card" data-category="Juices/Drinks">
+        <img src="images/juice.jpg" alt="Juices/Drinks">
+        <p>Juices/Drinks</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Favorites Section -->
+  <section id="favoritesSection">
+    <h2>⭐ Your Favorite Recipes</h2>
+    <div id="favoritesContainer" class="recipe-container"></div>
   </section>
 
   <script src="script.js"></script>
