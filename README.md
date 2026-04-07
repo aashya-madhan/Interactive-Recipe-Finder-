@@ -2,6 +2,8 @@
 
 🥘 Dishcovery is an interactive web application designed to help users discover recipes based on ingredients, dietary preferences, or cuisine types. Developed as part of an IBM internship project, this application showcases skills in frontend development, API integration, and responsive UI/UX design.
 
+DISHCOVERY WEBSITE - https://68d795c9d41d304f769b883b--monumental-crepe-2e074f.netlify.app/
+
 ✨ Features
 
 🔍 Advanced Search: Find recipes by ingredient, cuisine, or meal type.
@@ -35,4 +37,4 @@ Build a responsive, modern UI
 
 Improve accessibility and user experience
 
-Highlight internship experience with IBM through real-world development
+Highlight internship experience with IBM through real-world development 
